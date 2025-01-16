@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Skills Panel</title>
+</head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+<style>
+body{
+margin:5px 5px 5px 5px;
+padding:15px 15px 15px 15px;
+background-image:linear-gradient(to right top, darkblue,lightblue,cadetblue,teal,lightgreen,darkgreen);
+background-size:cover;
+background-repeat:no-repeat;
+}
+table{
+width:50%;
+height:50%;
+border-radius:10px;	
+}
+th,td{
+font-size:20px;
+padding:5px 5px 5px 5px;
+border-radius:25%;
+}
+canvas{
+padding:5px 5px 5px 5px;
+background-image:linear-gradient(to right bottom, pink,plum,lightblue,lavender);
+background-size:cover;
+background-repeat:no-repeat;
+box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+div{
+border-radius:50%;
+border:1px solid black;
+width:15px;
+height:15px;
+position: relative;
+animation: lvl 4s infinite;
+background-color:red;
+
+}
+@keyframes lvl{
+  from {left: 0px;}
+  to {left: 200px;}
+}
+
+</style>
+<body>
+<center>
+<table>
+<tr><th>SKILLS PANEL</th></td>
+<tr><th>Technical Skills</th></td>
+<tr><td><canvas id="techSkill" style="width:100%;max-width:100%"></canvas></td></tr>
+<tr><td></br></td></tr>
+<tr><th>Experience Skills</th></tr>
+<tr><td><canvas id="expSkill" style="width:100%;max-width:100%"></canvas></td></tr>
+</table>
+</center>
+<script>
+var xValues = ["HTML,CSS", "JAVA", "C#", "C++", "REACT NATIVE", "UNITY"];
+var yValues = [85, 45, 75, 35, 50, 85];
+var barColors = [
+  "#b91d47",
+  "#00aba9",
+  "#2b5797",
+  "#e8c3b9",
+  "#FFD700",
+  "#D2691E"
+];
+
+new Chart("techSkill", {
+  type: "pie",
+  data: {
+    labels: xValues,
+    datasets: [{
+      backgroundColor: barColors,
+      data: yValues
+    }]
+  },
+  options: {
+legend: {display: true},
+    title: {
+      display: true,
+      text: "Technical Skills"
+    }
+  }
+});
+
+var xValues = ["WEB", "UNITY", "BLENDER", "ANDROID STUDIO"];
+var yValues = [85, 45, 89, 35, 0, 100];
+var barColors = [
+  "#b91d47",
+  "#00aba9",
+  "#2b5797",
+  "#FFD700",
+  "#1e7145"
+];
+
+new Chart("expSkill", {
+  type: "horizontalBar",
+  data: {
+    labels: xValues,
+    datasets: [{
+      backgroundColor: barColors,
+      data: yValues
+    }]
+  },
+  options: {
+legend: {display: true},
+    title: {
+      display: true,
+      text: "Experience Skills"
+    }
+  }
+});
+</script>
+
+
+</body>
+</html>
