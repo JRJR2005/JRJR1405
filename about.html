@@ -7,23 +7,50 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
 <style>
 body{
-margin:5px 5px 5px 5px;
-padding:15px 15px 15px 15px;
 text-align:justify;
+justify-content:center;
 }
-td{
-width:300px;
-padding:15px 15px 15px 15px;
-}
-table{
-padding:5px 5px 5px 5px;
-background-image:linear-gradient(to top, lawngreen,white,lavender,skyblue,lightblue);
-background-size:cover;
-background-repeat:no-repeat;
+.header{
+width:99%;
+font-size:30px;
+color:brown;
+height:auto;
+padding:10px 10px 10px 10px;
+display:flex;
+flex-direction:row;
+justify-content:space-evenly;
 box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-width:100%;
-height:100%;
+border-radius:10px;
+position:sticky;
+top:10px;
 }
+.header_nav{
+display:flex;
+flex-direction:row;
+align-content:space-around;
+justify-content:space-evenly;
+flex-grow:1;
+}
+img{
+border-radius:80px;
+border:2px double grey;
+}
+a,p{
+color:teal;
+}
+.table{
+background-image:linear-gradient(to top, lawngreen,white,lavender,skyblue,lightblue);
+background-repeat:no-repeat;
+background-size:cover;
+display:flex;
+flex-direction:column;
+color:darkblue;
+padding:5% 5% 5% 5%;
+font-size:25px;
+height:100%;
+width:90.3%;
+border-radius:20px;
+}	
 h2{
 font-size:25px;
 color:red;
@@ -33,20 +60,68 @@ p{
 color:darkblue;
 font-family: "Sofia", sans-serif;
 }
+@media screen and (max-width: 767px){
+.header{
+background-color:white;
+position:relative;
+width:93%;
+top:10px;
+left:10px;
+font-size:15px;
+}
+.header_nav{
+display:flex;
+flex-direction:row;
+align-content:space-around;
+justify-content:space-evenly;
+flex-wrap:wrap;
+gap:10px;
+line-height:1px;
+}
+.imgs{
+width:200px;
+height:200px;
+}
+*{
+padding:2px 2px 2px 2px;
+margin:5px 5px 5px 5px;
+}
+.logo{
+width:40px; height:40px;
+}
+.table{
+position:relative;
+left:5px;
+flex-wrap: wrap;
+text-align: center;
+display:flex;
+flex-direction:row;
+align-items:stretch;
+justify-content:center;
+width:87%;
+height:auto;
+font-size:15px;
+}
+}
 
 </style>
 <body>
-<table>
-<tr><th><h1>ABOUT ME</h1></th></tr>
-<tr><td><h2>I m J Rosan John Redsin </h2></td></tr>
-<tr><td><p>A passionate software development student with a strong academic background in computer science, driven by a desire to create impactful applications and games. 
+<div class="header">
+<div><img src="https://img.freepik.com/premium-vector/jr-logo_590037-19.jpg?w=360" width="80px" height="80px" style="border-radius:30px" class="logo"></div>
+<div class="header_nav"><h5><a href="index.html">Home</a></h5><h5><a href="about.html">About</a></h5> <h5><a href="skills.html">Skills</a></h5> <h5><a href="3d.html">3D Model Gallery</a></h5> <h5><a href="edu.html">Education</a> </h5> <h5><a href="contact.html">Contact</a></h5> <h5><a href="pro.html">Projects & Interns</a> </h5></div>
+</div>
+</br></br>
+<div class="table">
+<div>
+<h1>ABOUT ME</h1>
+<h2>I m J Rosan John Redsin </h2>
+<p>A passionate software development student with a strong academic background in computer science, driven by a desire to create impactful applications and games. 
 Proficient in C# and C++, I have developed my skills as both a game developer and app developer through hands-on projects like "Job Skills Adventure" and "Little Ice Age," where I focused on gameplay mechanics, user experience, and project management. 
 My experience in these projects has enhanced my problem-solving abilities and critical thinking skills, enabling me to develop innovative solutions to complex challenges.
 In addition to programming, I have a keen interest in 3D modeling and web development, which I explore through self-driven projects and coursework. I believe in the power of collaboration and have actively participated in team projects, where I enjoyed sharing ideas and learning from others. 
 I am committed to continuous learning and staying updated with industry trends and technologies. 
-Eager to apply my skills in an entry-level position, I am excited to contribute to a dynamic organization while furthering my growth as a software and app developer.
-</p></td><td rowspan="2"><center><img src="myimg.jpeg" width="270px" height="270px" style="border-radius:20%; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2)" class="imgs"></center></br></br></br></br></td></tr>
-<tr><td></br></br></td></tr>
-</table>
+Eager to apply my skills in an entry-level position, I am excited to contribute to a dynamic organization while furthering my growth as a software and app developer.</p></div>
+<div><center><img src="myimg.jpeg" width="300px" height="300px" style="border-radius:20%; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2)" class="imgs"></center></div>
+</div>
 </body>
 </html>

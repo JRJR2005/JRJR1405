@@ -6,36 +6,112 @@
 </head>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
 <style>
-
 body{
 margin:5px 5px 5px 5px;
 padding:15px 15px 15px 15px;
 text-align:justify;
 box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
-td{
-width:300px;
-padding:15px 15px 15px 15px;
+.header{
+font-size:30px;
+color:brown;
+height:auto;
+padding:10px 10px 10px 10px;
+display:flex;
+flex-direction:row;
+justify-content:space-evenly;
+box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+border-radius:10px;
+position:sticky;
+top:10px;
 }
-table{
-padding:5px 5px 5px 5px;
+.header_nav{
+display:flex;
+flex-direction:row;
+align-content:space-around;
+justify-content:space-evenly;
+flex-grow:1;
+}
+img{
+border-radius:80px;
+border:2px double grey;
+}
+a,p{
+color:teal;
+}
+h3{
+color:brown;
+text-decoration:underline;
+text-underline-offset: 3px;
+}
+h4{
+color:teal;
+font-size:16px;
+}
+.table{
+padding:15px 15px 15px 15px;
 background-image:linear-gradient(to top, lawngreen,white,lavender,skyblue,lightblue);
 background-size:cover;
 background-repeat:no-repeat;
 box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+border-radius:10px;
+}
+h4::first-letter{
+padding-left:25px;
+}
+@media screen and (max-width:767px){
+.header{
+background-color:white;
+position:relative;
+width:93%;
+top:10px;
+left:10px;
+font-size:15px;
+}
+.header_nav{
+display:flex;
+flex-direction:row;
+align-content:space-around;
+justify-content:space-evenly;
+flex-wrap:wrap;
+gap:10px;
+line-height:1px;
+}
+.imgs{
+width:200px;
+height:200px;
+}
+*{
+padding:2px 2px 2px 2px;
+margin:5px 5px 5px 5px;
+}
+.logo{
+width:40px; height:40px;
+}
 }
 </style>
 <body>
-<table>
-<tr><th colspan="2"><h1>Educational Credentials</h1><th><th colspan="2"><h1>Acheivements</h1><th></tr>
-<tr><th colspan="2"><hr></hr></th><th style="width:25%;"></th><th colspan="5"><hr></hr></th></tr>
-<tr><th rowspan="8" style="background-color:;width:1px;box-shadow:0px 0px 2px blue,0px 0px 4px darkblue,0px 0px 2px blue,0px 0px 4px darkblue,0px 0px 8px violet,0px 0px 10px darkviolet;"></th><th>SSLC<th><th rowspan="8" style="background-color:;width:1px;box-shadow:0px 0px 2px blue,0px 0px 4px darkblue,0px 0px 2px blue,0px 0px 4px darkblue,0px 0px 8px violet,0px 0px 10px darkviolet;"></th><th>Gold Medalist in BCA<th></tr>
-<tr><td>Completed my 10th Grades in All Angels Matriculation Higher Secondary School with percentage of 84.4% in the year of 2020.</td><td></td><td>Awarded for score first mark in the Ist Semester.<br>It motivated me to maintain a strong focus on my studies and inspired me to pursue further excellence throughout my academic journey.</td></tr>
-<tr><th>HSC<th><th>Outreach Award</th></tr>
-<tr><td>Completed my 12th Grades in All Angels Matriculation Higher Secondary School with percentage of 90.17% in the year of 2022.</td><td></td><td>Received the Outreach Award during my second semester, recognizing my commitment to community engagement and service.</td></tr>
-<tr><th>UG<th></tr>
-<tr><td>Completed my UG Degree in Computer Application in Loyola College with percentage of 88.45% in the year of 2025.</td></tr>
-</table>
+<div class="header">
+<div><img src="https://img.freepik.com/premium-vector/jr-logo_590037-19.jpg?w=360" width="80px" height="80px" style="border-radius:30px" class="logo"></div>
+<div class="header_nav"><h5><a href="index.html">Home</a></h5><h5><a href="about.html">About</a></h5> <h5><a href="skills.html">Skills</a></h5> <h5><a href="3d.html">3D Model Gallery</a></h5> <h5><a href="edu.html">Education</a> </h5> <h5><a href="contact.html">Contact</a></h5> <h5><a href="pro.html">Projects & Interns</a> </h5></div>
+</div>
+</br></br>
+<div class="table">
+<h1>Educational Credentials</h1>
+<h3>SSLC</h3>
+<h4>Completed my 10th Grades in All Angels Matriculation Higher Secondary School with percentage of 84.4% in the year of 2020.</h4>
+<h3>HSC</h3>
+<h4>Completed my 12th Grades in All Angels Matriculation Higher Secondary School with percentage of 90.17% in the year of 2022.</h4>
+<h3>UG</h3>
+<h4>Completed my UG Degree in Computer Application in Loyola College with percentage of 88.45% in the year of 2025.</h4>
+<hr></hr>
+<h1>Acheivements</h1>
+<hr></hr>
+<h3>Gold Medalist in BCA</h3>
+<h4>Awarded for score first mark in the Ist Semester & IInd Semester. It motivated me to maintain a strong focus on my studies and inspired me to pursue further excellence throughout my academic journey.</h4>
+<h3>Outreach Award</h3>
+<h4>Received the Outreach Award during my second semester, recognizing my commitment to community engagement and service.</h4> 
+</div>
 
 </body>
 </html>

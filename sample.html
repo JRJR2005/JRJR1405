@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Portfolio</title>
+<style>
+/* Global Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: darkblue;
+  background: linear-gradient(to top, lawngreen, white, lavender, skyblue, lightblue);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.header h2 {
+  font-size: 24px;
+  color: brown;
+  display: flex;
+  align-items: center;
+}
+
+.header img {
+  border-radius: 30px;
+  margin-right: 10px;
+}
+
+.header a {
+  text-decoration: none;
+  color: teal;
+  margin: 0 10px;
+}
+
+.header a:hover {
+  text-decoration: underline;
+}
+
+.body {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+  text-align: center;
+}
+
+.body h1 {
+  font-size: 36px;
+}
+
+.body h3 {
+  font-size: 20px;
+  color: black;
+  animation: name 3s infinite;
+}
+
+.body img {
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.social-links {
+  margin-top: 20px;
+}
+
+.social-links a {
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.social-links img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+@keyframes name {
+  0% {
+    color: black;
+    font-size: 20px;
+  }
+  100% {
+    color: red;
+    font-size: 40px;
+    text-shadow: 2px 2px 2px black;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .body {
+    flex-direction: column;
+  }
+
+  .body img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .header a {
+    margin: 5px 0;
+  }
+}
+</style>
+</head>
+<body>
+<div class="header">
+  <h2>
+    <img src="https://img.freepik.com/premium-vector/jr-logo_590037-19.jpg?w=360" alt="Logo" width="40" height="40">
+    JRJR
+  </h2>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="skills.html">Skills</a>
+    <a href="3d.html">3D Model Gallery</a>
+    <a href="edu.html">Education</a>
+    <a href="contact.html">Contact</a>
+    <a href="pro.html">Projects & Interns</a>
+  </nav>
+</div>
+
+<div class="body">
+  <div>
+    <h1>Hi There,</br>I'm J Rosan John Redsin</h1>
+    <h3>I Am Into Game Design </br>&</br> Developer</h3>
+  </div>
+  <img src="myimg.jpeg" alt="Profile Picture">
+</div>
+
+<div class="social-links">
+  <a href="https://m.facebook.com/profile.php?id=100081573728975">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Facebook_logo_%28square%29.png" alt="Facebook">
+  </a>
+  <a href="https://www.instagram.com/rosan_0104/?hl=en">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" alt="Instagram">
+  </a>
+  <a href="https://x.com/home">
+    <img src="https://img.freepik.com/premium-vector/twitter-new-logo-twitter-icons-new-twitter-logo-x-2023_929078-218.jpg" alt="Twitter">
+  </a>
+  <a href="https://m.youtube.com/channel/UCR91kWC8ec1TyBbkwzFJYAg">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg" alt="YouTube">
+  </a>
+  <a href="https://www.linkedin.com/in/j-rosan-john-redsin-3116a22aa/">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRokEYt0yyh6uNDKL8uksVLlhZ35laKNQgZ9g&s" alt="LinkedIn">
+  </a>
+</div>
+
+<div class="footer">
+  <p><a href="resume.html">Resume</a></p>
+</div>
+</body>
+</html>

@@ -6,7 +6,6 @@
 </head>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
 <style>
-
 body{
 margin:5px 5px 5px 5px;
 padding:15px 15px 15px 15px;
@@ -15,30 +14,117 @@ background-size:cover;
 background-repeat:no-repeat;
 box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
+.header{
+font-size:30px;
+position:sticky;
+top:10px;
+color:brown;
+height:auto;
+padding:10px 10px 10px 10px;
+display:flex;
+flex-direction:row;
+justify-content:space-evenly;
+box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+border-radius:10px;
+}
+.header_nav{
+display:flex;
+flex-direction:row;
+align-content:space-around;
+justify-content:space-evenly;
+flex-grow:1;
+}
+img{
+border-radius:80px;
+border:2px double grey;
+}
+a,p{
+color:teal;
+}
 h2{
 font-family: "Sofia", sans-serif;
 }
 h3{
 font-family: "Audiowide", sans-serif;
+font-size:19;
 }
-</style>
-<body><center>
-<table>
-<tr><th style="text-align:center;font-size:35px" colspan="4"><h3>CONTACT US</h3></th></tr>
-<tr>
-<td colspan="2"><h2 style="font-size:50px;line-height:70px;">GET </br>IN </br>TOUCH</h2></td>
-<td><h3>Any Feedbacks or questions ask <a href="mailto:rosanjohnredsin8754@gmail.com">here</a></h3></td></tr>
-<tr>
-<td><h3>rosanjohnredsin8754@gmail.com<br>8754558543</h3></td><td><br><br></td>
-<td><h3>SOCIAL LINKS</h3>
-<h3><ul>
-<li><a href="https://m.facebook.com/profile.php?id=100081573728975">Facebook</a></li>
-<li><a href="https://www.instagram.com/rosan_0104/?hl=en">Instagram</a></li>
-<li><a href="https://x.com/home">Twitter</a></li>
-<li><a href="https://www.linkedin.com/in/j-rosan-john-redsin-3116a22aa/">Linkedin</a></li>
-</ul></h3></td>
+li{
+list-style-type:none;
+}
+.table{
+align-items:center;
+width:100%;
+height:100%;
+align-content:center;
+flex-direction:row;
+display:flex;
+justify-content:center;
+}
+.get{
+font-size:45px;
+line-height:70px;
+}
+@media screen and (max-width: 767px){
+.header{
+background-color:white;
+position:relative;
+width:93%;
+top:10px;
+left:10px;
+font-size:15px;
+}
+.header_nav{
+display:flex;
+flex-direction:row;
+align-content:space-around;
+justify-content:space-evenly;
+flex-wrap:wrap;
+gap:10px;
+line-height:1px;
+}
+.imgs{
+width:200px;
+height:200px;
+}
+*{
+padding:2px 2px 2px 2px;
+margin:5px 5px 5px 5px;
+}
+.logo{
+width:40px; height:40px;
+}
+li{
+font-size:17px;
+line-height:15px;
+}
+.get{
+font-size:35px;
+line-height:60px;
+}
+h3{
+font-size:17px;
+}
+}
 
-<BR></BR></tr>
+</style>
+<body>
+<div class="header">
+<div><img src="https://img.freepik.com/premium-vector/jr-logo_590037-19.jpg?w=360" width="80px" height="80px" style="border-radius:30px" class="logo"></div>
+<div class="header_nav"><h5><a href="index.html">Home</a></h5><h5><a href="about.html">About</a></h5> <h5><a href="skills.html">Skills</a></h5> <h5><a href="3d.html">3D Model Gallery</a></h5> <h5><a href="edu.html">Education</a> </h5> <h5><a href="contact.html">Contact</a></h5> <h5><a href="pro.html">Projects & Interns</a> </h5></div>
+</div>
+</br></br>
+<center>
+<h3 style="text-align:center;font-size:30px">CONTACT US</h3>
+<div class="table">
+<h2 class="get">GET </br>IN </br>TOUCH
+<h3>Any Feedbacks or questions ask <a href="mailto:rosanjohnredsin8754@gmail.com">here</a> <br>or contact through this number<br><a href="tel:+91 8754558543">8754558543</a></h3><br><br></div>
+<h3>SOCIAL LINKS</h3>
+<h3><ul>
+<li><a href="https://m.facebook.com/profile.php">Facebook</a></li>
+<li><a href="https://www.instagram.com/rosan_0104/?hl=en">Instagram</a></li>
+<li><a href="https://x.com/home">Twitter(X)</a></li>
+<li><a href="https://www.linkedin.com/in/j-rosan-john-redsin-3116a22aa/">Linkedin</a></li>
+</ul></h3>
 </center>
 </body>
 </html>
